@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Tool pbd2lodas V0.3a</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/w3.css">
+<link rel="stylesheet" href="../static/bootstrap.min.css">
+<link rel="stylesheet" href="../static/dna-theme.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="w3-row-padding">
+  <header class="card">
+    <center><h3>Basisdatenanlage für das Mandantentool pbd2lodasV0.3a</h3></center>
+  </header>
+</div>
+<br>
+
+<!--Navigation-->
+<div class="w3-container">
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+  </ul>
+  </div>
+<br>
+
+
+
+<div class="w3-row-padding">
+<br>
+  <div class="w3-quarter">&nbsp;
+  </div>
+
+  <div class="w3-half">
+  <form action = "http://localhost:1701/index.html" class="w3-container w3-card-4 w3-round", method = "POST">
+  <h2>Grunddaten für deinen Mandanten erfassen</h2>
+    <div class="w3-section">      
+      <div class="w3-half">
+      <input class="w3-input w3-border  w3-pale-yellow w3-round" type="text" name="form_berater", required maxlength="6">
+      <label>Beraternummer<br></label><br>
+      </div>
+    </div>
+    <div class="w3-section">      
+      <div class="w3-half">
+      <input class="w3-input w3-border  w3-pale-yellow w3-round" type="text" name="form_mandant", required maxlength="5">
+      <label>Mandantennummer<br></label><br>
+      </div>
+    </div>
+    <br>
+  
+  <div class="w3-row">
+    <div class="w3-quarter">Stundenlohnarten:<br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ns1" value="Nummer" maxlength="4">
+      <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ns2" value="Nummer" maxlength="4">
+      <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ns3" value="Nummer" maxlength="4">
+      <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ns4" value="Nummer" maxlength="4">
+      <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ns5" value="Nummer" maxlength="4">
+    </div>
+    <div class="w3-quarter">
+      <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ts1" value="Lohnartname" maxlength="23">
+        <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ts2" value="Lohnartname" maxlength="23">
+          <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ts3" value="Lohnartname" maxlength="23">
+          <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ts4" value="Lohnartname" maxlength="23">
+          <br>
+      <input class="w3-input w3-border w3-round" type="text" name="loa_ts5" value="Lohnartname" maxlength="23">
+      <br>
+    </div>
+    
+      <div class="w3-quarter">Betragslohnarten:<br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_nb1" value="Nummer" maxlength="4">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_nb2" value="Nummer" maxlength="4">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_nb3" value="Nummer" maxlength="4">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_nb4" value="Nummer" maxlength="4">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_nb5" value="Nummer" maxlength="4">
+      </div>
+      <div class="w3-quarter"><br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_tb1" value="Lohnartname" maxlength="23">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_tb2" value="Lohnartname" maxlength="23">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_tb3" value="Lohnartname" maxlength="23">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_tb4" value="Lohnartname" maxlength="23">
+        <br>
+        <input class="w3-input w3-border w3-round" type="text" name="loa_tb5" value="Lohnartname" maxlength="23">
+        </div>
+        <br>
+      </div>
+ 
+    <div class="w3-third">    
+      <center>
+        <input type = "submit" button class="btn btn-primary" value = "speichern"/>
+        </center><br>
+    </div>
+    
+    <div class="w3-third">&NonBreakingSpace;</div>    
+    
+    <div class="w3-third">  
+      <center>
+        <input type="reset" button class="btn btn-default" value="verwerfen">
+        </center>
+    </div><br>
+  </form>
+</div>
+
+  <div class="w3-quarter">&nbsp;
+  </div>
+</div>
+<br>
+
+<div class="w3-row-padding">
+    <footer class="card">
+    <center>
+        <h3>
+            Erfasse die Beraternummer, die Mandantennnummer und am besten alle 10 Lohnarten für deinen Mandanten!<br>
+            Die Datei wird im Ordner /daten mit dem Namen "basisdaten.txt" gespeichert.<br>
+            Diese Datei gib deinem Mandanten zur Erfassung!</h3></center>
+  </footer>
+    </div> 
+  <br>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
